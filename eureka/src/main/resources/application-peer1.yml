@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cloud-eureka
+server:
+  port:
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://xxx:xx/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
